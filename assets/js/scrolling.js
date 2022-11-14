@@ -1,5 +1,9 @@
-const link = document.getElementById('arrow')
+const main = document.getElementById('arrow')
+const footer = document.getElementById('to-footer')
 
-link.addEventListener("click", ()=>{
-  window.scroll({top: 1000, behavior: 'smooth'});
+main.addEventListener("click", () => {
+  window.scroll({top: 900, behavior: 'smooth'});
+});
+footer.addEventListener("click", () => {
+  window.scroll({top: 2000, behavior: 'smooth'});
 });

@@ -16,7 +16,7 @@
         <h1 class="tittle">Ремонт квартир <br/> в типовых домах</h1>
         <p class="sub-tittle">Готовый дизайн-проект, работы и материалы <br/> за 3 месяца от 610 т.р.</p>
         <div class='buttonWrap'>
-          <button class="button">Узнайте о запуске первым</button>
+          <button id="to-footer" class="button">Узнайте о запуске первым</button>
           <p>Старт весной 2016</p>
         </div>
       </div>
@@ -28,19 +28,17 @@
         <p class="arrow-text">Листайте вниз, <br/> чтобы ничего не упустить</p>
       </div>
     </div>
-    <div class="dis-flex">
-      <div class="play">
-        <img src="assets/image/play.png"/>
-        <p>Смотреть видео</p>
-      </div>
-      <div>
-        <img class='background' src="./assets/image/bg.png"/>
-      </div>
+    <div class="play">
+      <img src="assets/image/play.png"/>
+      <p>Смотреть видео</p>
+    </div>
+    <div>
+      <img class='background' src="./assets/image/bg.png"/>
     </div>
   </div>
 </div>
 
-<div class="container">
+<div class="container-info">
   <div class="flex-column">
     <div class="info-header-wrap">
       <h1 class='info-header'>FIX Ремонт — это легко</h1>
@@ -65,70 +63,118 @@
         <h1 class="info-container-header">3 месяца</h1>
       </div>
     </div>
-    <div class="slider-wrapper">
-      <div class="info-header-wrap">
-        <h1 class='info-header'>3 стиля интерьера</h1>
-        <p class="info-text">Скандинавский, классический и эко-стиль</p>
-      </div>
-      
-      
-      <div class="container-slider">
-        <div class="carousel">
-          <ul>
-            <li>
-              <div id="red">
-                <img src="assets/image/img.png" alt="">
-                <p>Кафельная плитка в ванной комнате
-                  в скандинавском стиле</p>
-              </div>
-            </li>
-            <li>
-              <div id="green">
-                <img src="assets/image/img.png" alt="">
-                <p>Кафельная плитка в ванной комнате
-                  в скандинавском стиле</p>
-              </div>
-            </li>
-            <li>
-              <div id="blue">
-                <img src="assets/image/img.png" alt="">
-                <p>Кафельная плитка в ванной комнате
-                  в скандинавском стиле</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="info-header-wrap">
+      <h1 class='info-header'>3 стиля интерьера</h1>
+      <p class="info-text">Скандинавский, классический и эко-стиль</p>
     </div>
   </div>
 </div>
 
+
+<div class="slider-container">
+  <div class="gallery">
+    <div class="gallery__stream">
+      <div class="gallery__item bg-1">
+        <div class="mySlides fade">
+          <div class="dis-flex">
+            <img src="assets/image/img.png" alt="">
+            <p class="slider-text">Кафельная плитка в ванной комнате
+              в скандинавском стиле</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item bg-2">
+        <div class="mySlides fade">
+          <div class="dis-flex">
+            <img src="assets/image/img.png" alt="">
+            <p class="slider-text">Кафельная плитка в ванной комнате
+              в скандинавском стиле</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item bg-3">
+        <div class="mySlides fade">
+          <div class="dis-flex">
+            <img src="assets/image/img.png" alt="">
+            <p class="slider-text">Кафельная плитка в ванной комнате
+              в скандинавском стиле</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item bg-4">
+        <div class="mySlides fade">
+          <div class="dis-flex">
+            <img src="assets/image/img.png" alt="">
+            <p class="slider-text">Кафельная плитка в ванной комнате
+              в скандинавском стиле</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item bg-5">
+        <div class="mySlides fade">
+          <div class="dis-flex">
+            <img src="assets/image/img.png" alt="">
+            <p class="slider-text">Кафельная плитка в ванной комнате
+              в скандинавском стиле</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item bg-6">
+        <div class="mySlides fade">
+          <div class="dis-flex">
+            <img src="assets/image/img.png" alt="">
+            <p class="slider-text">Кафельная плитка в ванной комнате
+              в скандинавском стиле</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item bg-7">
+        <div class="mySlides fade">
+          <div class="dis-flex">
+            <img src="assets/image/img.png" alt="">
+            <p class="slider-text">Кафельная плитка в ванной комнате
+              в скандинавском стиле</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery__prev"></div>
+    <div class="gallery__next"></div>
+  </div>
+</div>
+
+
 <div class="container">
   <div class="form-container">
     <h1 class="footer-header">Узнайте о запуске сервиса первым</h1>
-    <div class="dis-flex-center">
-      <img src="/assets/image/door.png" alt="">
-      <p class="footer-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit !!!</p>
+    <div id="modal" class="modal">
+      <img class="modal-img" src="/assets/image/big-arrow.png" alt="big-arrow">
+      <p class="modal-title">Спасибо! Мы будем держать</p>
+      <p class="modal-title"> вас в курсе обновлений</p>
     </div>
-    <form class="flex-column-center">
+    <form id="form" class="form">
+      <div class="dis-flex-center">
+        <img src="/assets/image/door.png" alt="">
+        <p class="footer-sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit !!!</p>
+      </div>
       <div class="floating-label-group">
-        <input type="text" id="username" class="form-input" autocomplete="off" autofocus required/>
+        <input type="text" id="username" class="form-input" autocomplete="off" required/>
         <label class="floating-label">Имя и фамилия*</label>
       </div>
       <div class="floating-label-group">
-        <input type="text" id="email" class="form-input" autocomplete="off" autofocus required/>
+        <input type="text" id="email" class="form-input" autocomplete="off" required/>
         <label class="floating-label">Email адрес*</label>
       </div>
       <div class="floating-label-group">
-        <input type="text" id="number" class="form-input" autocomplete="off" autofocus required/>
+        <input type="text" id="number" class="form-input" autocomplete="off" required/>
         <label class="floating-label">Телефон*</label>
       </div>
-      <button class="button">Подписаться</button>
+      <button type="submit" class="button">Подписаться</button>
+      <div class="flex-column-center">
+        <p class="footer-indent">*Обязательные для заполнения поля</p>
+        <p class="form-title">Политика конфиденциальности</p>
+      </div>
     </form>
-    <div class="flex-column-center">
-      <p class="footer-indent">*Обязательные для заполнения поля</p>
-      <p class="form-title">Политика конфиденциальности</p>
-    </div>
   </div>
 </div>
 
@@ -164,12 +210,15 @@
 
 
 <div class="modal">
- <hi class="modal-header">Узнайте о запуске сервиса первым</hi>
+  <img class="modal-img" src="/assets/image/big-arrow.png" alt="big-arrow">
+  <p class="modal-title">Спасибо! Мы будем держать</p>
+  <p class="modal-title"> вас в курсе обновлений</p>
 </div>
 
 
 <script src="assets/js/scrolling.js"></script>
 <script src="assets/js/slider.js"></script>
+<script src="assets/js/submit-form.js"></script>
 
 
 </body>
